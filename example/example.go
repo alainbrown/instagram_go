@@ -21,7 +21,7 @@ func main() {
 var config = instagram_go.DefaultConfig("{client_id}", "{client_secret}", "http://localhost:8080/callback")
 
 func home(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, `<a href="%s">Sign into IG</a>`, config.InstaSignInUrl())
+	fmt.Fprintf(w, `<a href="%s">Sign into IG</a>`, instagram_go.NewIg(config).InstaSignInUrl())
 }
 
 var users = map[string]*instagram_go.InstaAuthResponse{}
