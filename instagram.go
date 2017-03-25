@@ -16,7 +16,7 @@ import (
 const (
 	InstagramOAuthUrl   = "https://api.instagram.com/oauth/authorize?client_id=%s&response_type=code&redirect_uri=%s&scope=%s"
 	InstagramTokenUrl   = "https://api.instagram.com/oauth/access_token"
-	InstagramOAuthScope = "basic+comments+relationships+likes"
+	InstagramOAuthScope = "basic+public_content+follower_list+comments+relationships+likes"
 
 	InstagramV1Users = "https://api.instagram.com/v1/users/%s/relationship?access_token=%s"
 )
